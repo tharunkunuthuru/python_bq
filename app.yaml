@@ -3,8 +3,8 @@ runtime: python39
 entrypoint: gunicorn -w 4 -b :$PORT main:app
 
 env_variables:
-  GOOGLE_CLOUD_PROJECT: "qwiklabs-gcp-03-24a1cd658bd5"  # Replace with your actual project ID
-  DATASET_ID: "customerdata"            # Replace with your actual dataset ID
+  GOOGLE_CLOUD_PROJECT: "braided-shift-418211"  # Replace with your actual project ID
+  DATASET_ID: "braided-shift-418211.creditcard"            # Replace with your actual dataset ID
 
 handlers:
 - url: /static

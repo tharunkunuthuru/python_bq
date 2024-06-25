@@ -7,7 +7,7 @@ env_variables:
   DATASET_ID: "qwiklabs-gcp-02-aafa89bc4ad3.customerdata"
   PORT: "8080"
 
-service: my-app  # Replace with your app's name
+service: default  # Replace with your app's name
 
 instance_class: F1  # You can adjust the instance class for memory/CPU needs
 

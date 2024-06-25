@@ -4,8 +4,8 @@ from google.cloud import bigquery
 app = Flask(__name__)
 
 # Configure BigQuery client (replace with your project ID and dataset ID)
-client = bigquery.Client(project='your-project-id')
-dataset_id = 'your-dataset-id'
+client = bigquery.Client(project='qwiklabs-gcp-03-24a1cd658bd5')
+dataset_id = 'qwiklabs-gcp-03-24a1cd658bd5.customerdata'
 
 @app.route('/')
 def user_form():
@@ -17,9 +17,6 @@ def submit_user_details():
     age = int(request.form['age'])  # Ensure integer conversion
     email = request.form['email']
     phone_number = request.form['phone_number']
-
-    # Validate user input (optional)
-    # ...
 
     # Create a BigQuery table schema
     schema = [bigquery.SchemaField('name', 'STRING'),

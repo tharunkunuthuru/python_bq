@@ -1,4 +1,4 @@
-service: qwiklabs-gcp-03-24a1cd658bd5@appspot.gserviceaccount.com # Replace with your actual service name
+service: default # Replace with your actual service name
 
 # Optional configuration for flexibility and library/framework support
 env: flex  # Uncomment if needed

@@ -19,10 +19,12 @@ def submit_user_details():
     phone_number = request.form['phone_number']
 
     # Create a BigQuery table schema
-    schema = [bigquery.SchemaField('name', 'STRING'),
-              bigquery.SchemaField('age', 'INTEGER'),
-              bigquery.SchemaField('email', 'STRING'),
-              bigquery.SchemaField('phone_number', 'STRING')]
+    schema = [
+        bigquery.SchemaField('name', 'STRING'),
+        bigquery.SchemaField('age', 'INTEGER'),
+        bigquery.SchemaField('email', 'STRING'),
+        bigquery.SchemaField('phone_number', 'STRING')
+    ]
 
     # Create a BigQuery table if it doesn't exist
     table_ref = client.dataset(dataset_id).table('user_details')

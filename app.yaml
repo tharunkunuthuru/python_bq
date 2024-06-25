@@ -1,0 +1,7 @@
+runtime: python39
+
+env: flex  # Optional for flexibility with libraries/frameworks
+
+service: default
+
+# ... (optional: handlers, scaling, etc.)

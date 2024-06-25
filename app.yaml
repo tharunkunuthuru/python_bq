@@ -1,7 +1,24 @@
-# Updated configuration
-service: default  # Replace with your service name
-# Set a lower max_instances value (adjust as needed)
-env: flex  # Optional for flexibility with libraries/frameworks
-runtime: python39
+service: qwiklabs-gcp-03-24a1cd658bd5@appspot.gserviceaccount.com # Replace with your actual service name
 
-max_instances: 10  # Adjust this value to be less than or equal to 10
+# Optional configuration for flexibility and library/framework support
+env: flex  # Uncomment if needed
+
+runtime: python39  # Replace with your appropriate runtime if different
+
+# Set a reasonable max_instances value (adjust based on needs)
+max_instances: 10
+
+# Configure environment variables (optional)
+env_variables:
+  # Add environment variables here (e.g., MY_SECRET_KEY=your_secret_key)
+
+# Manual scaling configuration (optional, for fixed instance count)
+# Uncomment if needed and adjust instances as desired
+# manual_scaling:
+#   instances: 1
+
+# Basic scaling configuration (optional, for automatic scaling)
+# Uncomment if needed and adjust values as desired
+# basic_scaling:
+#   idle_timeout: 300  # Adjust timeout for inactive instances
+#   max_instances: 5  # Adjust maximum scaling instances

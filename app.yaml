@@ -1,7 +1,7 @@
+# Updated configuration
+service: default  # Replace with your service name
+# Set a lower max_instances value (adjust as needed)
+env: flex  # Optional for flexibility with libraries/frameworks
 runtime: python39
 
-env: flex  # Optional for flexibility with libraries/frameworks
-
-service: default
-
-# ... (optional: handlers, scaling, etc.)
+max_instances: 10  # Adjust this value to be less than or equal to 10
